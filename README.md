@@ -1,6 +1,17 @@
 # Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Remarks
+
+I tried to make the app with the react SDK from Giphy but 
+the Grid component they offer wasn't rendering (other people 
+have that issue as well [link](https://stackoverflow.com/questions/72763236/giphy-react-grid-component-is-not-working))
+
+For that reason I used a premade Grid componet and fetched the data manually using
+Giphy's API.
+
+I used styled-componets for some basic styling of the Buttons
+( CSS is not my strong suit and it shows...)
+
 
 ## Available Scripts
 

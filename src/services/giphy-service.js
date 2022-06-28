@@ -1,11 +1,13 @@
 import { GiphyFetch } from "@giphy/js-fetch-api";
 
-// const gf = new GiphyFetch("D31L73ySufmBJ3YBDkmbVnH9TuWXuvMa");
+const gf = new GiphyFetch("D31L73ySufmBJ3YBDkmbVnH9TuWXuvMa");
 
 const animals = ["cat", "dog", "elephant", "lion", "monkey"];
 
-// const fetchGifs = (offset) => gf.trending({ offset, limit: 40 });
-// const searchGifs = (term) => (offset) => gf.search(term, { limit: 40, offset });
+const searchGifs = (searchTerm) =>
+  gf.search(searchTerm, {
+    offset: Math.floor(Math.random() * 500),
+    limit: 40,
+  });
 
-// export { animals, fetchGifs, searchGifs };
-export { animals };
+export { animals, searchGifs };
